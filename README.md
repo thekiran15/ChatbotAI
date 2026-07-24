@@ -1,6 +1,6 @@
 AI Chatbot Platform (MERN Stack)
 
-A modern AI Chatbot Platform built with the MERN Stack (MongoDB, Express.js, React.js, Node.js). The application enables users to generate AI-powered text and images using the Groq API and ImageKit. It also includes a credit-based system with an online payment gateway, allowing users to purchase credits and access premium AI features through a clean and responsive interface.
+A modern AI Chatbot Platform built with the MERN Stack (MongoDB, Express.js, React.js, Node.js). The application enables users to generate AI-powered text using the Groq API and AI-generated images using ImageKit. It also features a credit-based system with an integrated online payment gateway, allowing users to purchase additional credits and access premium AI features through a clean and responsive interface.
 
 Features
 
@@ -14,7 +14,7 @@ Features
 
 💰 Credit-based AI usage system
 
-💳 Purchase credits through an online payment gateway
+💳 Purchase credits through Razorpay
 
 📜 View and manage generated AI content
 
@@ -72,19 +72,19 @@ How It Works
 1. Users create an account or log in securely.
 
 
-2. Users receive credits to access AI features.
+2. Users receive free credits after signing up.
 
 
 3. Enter a prompt to generate AI-powered text using the Groq API.
 
 
-4. Generate AI images from text prompts using ImageKit.
+4. Generate AI images by providing text prompts through ImageKit.
 
 
-5. Purchase additional credits through Razorpay.
+5. Purchase additional credits using Razorpay when credits run out.
 
 
-6. Continue using AI features based on the available credit balance.
+6. Continue generating AI text and images based on the available credit balance.
 
 
 
@@ -96,19 +96,21 @@ Building a complete MERN Stack application
 
 REST API development
 
-MongoDB database design
+MongoDB database design with Mongoose
 
 User authentication and authorization
 
-Groq API integration
+Integrating the Groq API for AI text generation
 
-AI image generation with ImageKit
+AI image generation using ImageKit
 
 Payment gateway integration using Razorpay
 
-Full-stack deployment on Vercel
+Credit-based application logic
 
-Environment variable management and API integration
+Environment variable management
+
+Full-stack deployment on Vercel
 
 
 Future Improvements
@@ -121,18 +123,18 @@ User profile management
 
 AI conversation history
 
-Dark mode
-
 Multi-language support
 
 Voice input and AI voice responses
+
+Dark mode
 
 Advanced prompt templates
 
 
 Installation
 
-git clone https://github.com/thekiran15/ChatbotAI
+git clone https://github.com/thekiran15/ChatbotAI.git
 
 cd ChatbotAI
 
