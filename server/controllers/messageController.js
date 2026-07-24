@@ -28,14 +28,14 @@ export const textMessageController = async (req, res) => {
         chat.messages.push({role: "user", content: prompt, timestamp: Date.now(),isImage: false})
 
         const { choices } = await openai.chat.completions.create({
-            model: "gemini-2.5-flash",
-            messages:[
+            model: "llama-3.1-8b-instant",
+            messages: [
                 {
                     role: "user",
                     content: prompt,
                 },
-            ],
-        });
+    ],
+});
 
         const reply = {...choices[0].message, timestamp: Date.now(), isImage: false}
         res.json({success: true, reply})
