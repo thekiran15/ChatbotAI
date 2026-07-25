@@ -91,13 +91,16 @@ export const AppContextProvider = ({ children }) => {
     }, [user]);
 
     useEffect(() => {
-        if(token){
-            fetchUser()
-        }else{
-            setUser(null)
-            setLoadingUser(false)
+        if (token) {
+            setLoadingUser(true);
+            fetchUser();
+        } else {
+            setUser(null);
+            setChats([]);
+            setSelectedChat(null);
+            setLoadingUser(false);
         }
-    }, []);
+}, [token]);
 
     const value = {
         navigate,
