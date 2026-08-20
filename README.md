@@ -1,4 +1,4 @@
-ChatbotAI Platform
+## ChatbotAI Platform
 
 🚀 AI-Powered Full-Stack Application built with MERN Stack
 
@@ -7,9 +7,9 @@ A modern AI Chatbot Platform that allows users to generate AI-powered text and i
 <p align="left">🔗 <a href="https://chatbotai-99.vercel.app">Live Demo</a>
  
 
-</p>---
+</p>
 
-✨ Project Preview
+## Project Preview
 
 🔐 Login & Authentication
 
@@ -31,7 +31,7 @@ Generate images from natural-language prompts.
 <img src="./screenshots/image-generation.png" width="800">
 </p>🌐 Community Images
 
-View AI-generated images shared with the community.
+ View AI-generated images shared with the community.
 
 <p align="center">
 <img src="./screenshots/community-images.png" width="800">
@@ -43,7 +43,7 @@ Purchase additional credits through Razorpay.
 <img src="./screenshots/credit-plans.png" width="800">
 </p>---
 
-🔥 Key Features
+## Key Features
 
 - 🤖 AI Text Generation using Groq API
 - 🖼️ AI Image Generation
@@ -59,7 +59,7 @@ Purchase additional credits through Razorpay.
 
 ---
 
-🛠️ Tech Stack
+## Tech Stack
 
 🎨 Frontend
 
@@ -93,7 +93,7 @@ Purchase additional credits through Razorpay.
 
 ---
 
-🏗️ Application Architecture
+## Application Architecture
 
                          👤 USER
                             │
@@ -126,7 +126,7 @@ Purchase additional credits through Razorpay.
 
 ---
 
-🔄 How It Works
+## How It Works
 
 🤖 AI Text Generation
 
@@ -177,8 +177,7 @@ Credits Added
 Continue Using AI
 
 ---
-
-💡 Why This Project?
+## Why This Project?
 
 This project combines multiple real-world software development concepts:
 
@@ -186,23 +185,8 @@ MERN + AI + REST APIs + Authentication + Database + Payment Gateway + Credit Sys
 
 Instead of building only a basic CRUD application, this project helped me understand how different services can work together to create a complete full-stack product.
 
----
 
-🎯 Interview Highlights
-
-Key Technical Areas
-
-Area| Technology
-Frontend| React.js
-Backend| Node.js + Express.js
-Database| MongoDB Atlas
-AI Text| Groq API
-AI Images| ImageKit
-Payments| Razorpay
-API Communication| Axios / REST APIs
-Deployment| Vercel
-
-What I Learned
+## What I Learned
 
 - Full-stack MERN development
 - REST API development
@@ -234,7 +218,7 @@ What I Learned
 
 ---
 
-⚙️ Installation
+## Installation
 
 Clone the Repository
 
@@ -260,7 +244,7 @@ Then start the frontend and backend according to your project configuration.
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Kiran S B
 
