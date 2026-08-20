@@ -1,4 +1,3 @@
-
 // Text-based AI chat message controller
 
 import Chat from "../models/Chat.js";
@@ -48,23 +47,30 @@ export const textMessageController = async (req, res) => {
         // GENERATE TEXT USING GROQ
         // ============================
 
-        const { choices } = await openai.chat.completions.create({
-            model: "llama-3.1-8b-instant",
+        const response = await openai.chat.completions.create({
+            model: "openai/gpt-oss-20b",
             messages: [
                 {
                     role: "user",
                     content: prompt
                 }
-            ]
+            ],
+            temperature: 0.7,
+            max_tokens: 1024
         });
 
+        const content =
+            response.choices?.[0]?.message?.content || "No response";
+
+        // Assistant reply
         const reply = {
-            ...choices[0].message,
+            role: "assistant",
+            content: content,
             timestamp: Date.now(),
             isImage: false
         };
 
-        // Save assistant reply
+        // Save assistant message
         chat.messages.push(reply);
 
         await chat.save();
@@ -134,8 +140,8 @@ export const imageMessageController = async (req, res) => {
         });
 
         // ============================
-        // GENERATE IMAGE USING
-        // POLLINATIONS AI
+        // GENERATE IMAGE
+        // USING POLLINATIONS
         // ============================
 
         const encodedPrompt = encodeURIComponent(prompt);
@@ -143,10 +149,13 @@ export const imageMessageController = async (req, res) => {
         const generatedImageUrl =
             `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1024&height=1024&nologo=true`;
 
-        console.log("GENERATED IMAGE URL:", generatedImageUrl);
+        console.log(
+            "GENERATED IMAGE URL:",
+            generatedImageUrl
+        );
 
         // ============================
-        // CREATE ASSISTANT REPLY
+        // ASSISTANT IMAGE REPLY
         // ============================
 
         const reply = {
@@ -157,26 +166,16 @@ export const imageMessageController = async (req, res) => {
             isPublished: isPublished || false
         };
 
-        // ============================
-        // SAVE ASSISTANT MESSAGE
-        // ============================
-
+        // Save assistant message
         chat.messages.push(reply);
 
         await chat.save();
 
-        // ============================
-        // DEDUCT CREDITS
-        // ============================
-
+        // Deduct 2 credits
         await User.updateOne(
             { _id: userId },
             { $inc: { credits: -2 } }
         );
-
-        // ============================
-        // SEND RESPONSE
-        // ============================
 
         return res.json({
             success: true,
