@@ -94,7 +94,7 @@ const Sidebar = ({ isMenuOpen, setIsMenuOpen }) => {
             ? assets.logo_full
             : assets.logo_full_dark
         }
-        alt="QuickGPT"
+        alt="ChatbotAI"
         className="w-full max-w-48"
       />
 
@@ -256,7 +256,7 @@ const Sidebar = ({ isMenuOpen, setIsMenuOpen }) => {
   <div className="flex flex-col text-sm overflow-hidden">
     <p>Credits : {user?.credits}</p>
     <p className="text-xs text-gray-400 truncate">
-      Purchase credits to use ChatbotAI
+      Purchase credits to use QuickGPT
     </p>
   </div>
 </div>
