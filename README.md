@@ -1,149 +1,277 @@
-AI Chatbot Platform (MERN Stack)
+ChatbotAI Platform
 
-A modern AI Chatbot Platform built with the MERN Stack (MongoDB, Express.js, React.js, Node.js). The application enables users to generate AI-powered text using the Groq API and AI-generated images using ImageKit. It also features a credit-based system with an integrated online payment gateway, allowing users to purchase additional credits and access premium AI features through a clean and responsive interface.
+🚀 AI-Powered Full-Stack Application built with MERN Stack
 
-Features
+A modern AI Chatbot Platform that allows users to generate AI-powered text and images, manage AI usage through a credit-based system, and purchase additional credits using Razorpay.
 
-🔐 Secure user authentication (Sign Up & Login)
+<p align="left">🔗 <a href="https://chatbotai-99.vercel.app">Live Demo</a>
+ 
 
-🤖 AI-powered text generation using the Groq API
+</p>---
 
-🖼️ AI image generation from text prompts using ImageKit
+✨ Project Preview
 
-💬 Interactive AI chatbot interface
+🔐 Login & Authentication
 
-💰 Credit-based AI usage system
+Secure user login and registration system.
 
-💳 Purchase credits through Razorpay
+<p align="center">
+<img src="./screenshots/login.png" width="800">
+</p>💬 AI Chatbot
 
-📜 View and manage generated AI content
+Generate AI-powered text responses using the Groq API.
 
-⚡ Fast and responsive user experience
+<p align="center">
+<img src="./screenshots/chatbot.png" width="800">
+</p>🖼️ AI Image Generation
 
-📱 Responsive and user-friendly interface
+Generate images from natural-language prompts.
 
-☁️ Fully deployed on Vercel
+<p align="center">
+<img src="./screenshots/image-generation.png" width="800">
+</p>🌐 Community Images
 
+View AI-generated images shared with the community.
 
-Tech Stack
+<p align="center">
+<img src="./screenshots/community-images.png" width="800">
+</p>💳 Credit Plans
 
+Purchase additional credits through Razorpay.
+
+<p align="center">
+<img src="./screenshots/credit-plans.png" width="800">
+</p>---
+
+🔥 Key Features
+
+- 🤖 AI Text Generation using Groq API
+- 🖼️ AI Image Generation
+- 💬 Interactive AI Chatbot
+- 🔐 User Authentication & Authorization
+- 💰 Credit-Based Usage System
+- 💳 Razorpay Payment Integration
+- 🌐 Community Image Sharing
+- 📜 Generated Content Management
+- 📱 Responsive User Interface
+- ⚡ REST API Communication
+- ☁️ Full-Stack Deployment on Vercel
+
+---
+
+🛠️ Tech Stack
+
+🎨 Frontend
+
+"React.js" (https://img.shields.io/badge/React.js-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+"JavaScript" (https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+"CSS" (https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+"Axios" (https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge)
+
+⚙️ Backend
+
+"Node.js" (https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+"Express.js" (https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express)
+
+🗄️ Database
+
+"MongoDB" (https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+"Mongoose" (https://img.shields.io/badge/Mongoose-880000?style=for-the-badge)
+
+🤖 AI Services
+
+"Groq API" (https://img.shields.io/badge/Groq%20API-000000?style=for-the-badge)
+"ImageKit" (https://img.shields.io/badge/ImageKit-5A67D8?style=for-the-badge)
+
+💳 Payment Gateway
+
+"Razorpay" (https://img.shields.io/badge/Razorpay-3395FF?style=for-the-badge&logo=razorpay&logoColor=white)
+
+☁️ Deployment
+
+"Vercel" (https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+---
+
+🏗️ Application Architecture
+
+                         👤 USER
+                            │
+                            ▼
+                   ┌─────────────────┐
+                   │  React Frontend │
+                   └────────┬────────┘
+                            │
+                         REST API
+                            │
+                            ▼
+                   ┌─────────────────┐
+                   │ Node.js +       │
+                   │ Express.js      │
+                   └───────┬─────────┘
+                           │
+              ┌────────────┼────────────┐
+              │            │            │
+              ▼            ▼            ▼
+          MongoDB       Groq API     ImageKit
+           Atlas       AI Text       AI Images
+              │
+              │
+              ▼
+          User Credits
+              │
+              ▼
+          Razorpay
+           Payment
+
+---
+
+🔄 How It Works
+
+🤖 AI Text Generation
+
+User Prompt
+     ↓
+React Frontend
+     ↓
+Express REST API
+     ↓
+Groq API
+     ↓
+AI Response
+     ↓
 Frontend
 
-React.js
+🖼️ AI Image Generation
 
-JavaScript
+Image Prompt
+     ↓
+React Frontend
+     ↓
+Express REST API
+     ↓
+Image Generation Service
+     ↓
+Generated Image
+     ↓
+Frontend
 
-CSS
+💳 Credit & Payment System
 
-Axios
+New User
+    ↓
+Free Credits
+    ↓
+Use AI Features
+    ↓
+Credits Deducted
+    ↓
+Credits Become Low / Zero
+    ↓
+Select Credit Plan
+    ↓
+Razorpay Payment
+    ↓
+Credits Added
+    ↓
+Continue Using AI
 
+---
 
-Backend
+💡 Why This Project?
 
-Node.js
+This project combines multiple real-world software development concepts:
 
-Express.js
+MERN + AI + REST APIs + Authentication + Database + Payment Gateway + Credit System + Cloud Deployment
 
+Instead of building only a basic CRUD application, this project helped me understand how different services can work together to create a complete full-stack product.
 
-Database
+---
 
-MongoDB Atlas
+🎯 Interview Highlights
 
+Key Technical Areas
 
-AI Services
+Area| Technology
+Frontend| React.js
+Backend| Node.js + Express.js
+Database| MongoDB Atlas
+AI Text| Groq API
+AI Images| ImageKit
+Payments| Razorpay
+API Communication| Axios / REST APIs
+Deployment| Vercel
 
-Groq API
+What I Learned
 
-ImageKit
+- Full-stack MERN development
+- REST API development
+- MongoDB & Mongoose
+- Authentication & authorization
+- External API integration
+- AI API integration
+- Payment gateway integration
+- Credit-based business logic
+- Environment variable management
+- Error handling
+- Frontend-backend communication
+- Full-stack deployment
 
+---
 
-Payment Gateway
+🚀 Future Improvements
 
-Razorpay
+- 💬 Save complete chat history
+- 📜 AI conversation history
+- 🖼️ Download generated images
+- 👤 User profile management
+- 🌍 Multi-language support
+- 🎙️ Voice input
+- 🔊 AI voice responses
+- 🌙 Dark mode improvements
+- 📝 Advanced prompt templates
+- 📊 User usage analytics
 
+---
 
-Deployment
+⚙️ Installation
 
-Vercel (Frontend & Backend)
-
-
-How It Works
-
-1. Users create an account or log in securely.
-
-
-2. Users receive free credits after signing up.
-
-
-3. Enter a prompt to generate AI-powered text using the Groq API.
-
-
-4. Generate AI images by providing text prompts through ImageKit.
-
-
-5. Purchase additional credits using Razorpay when credits run out.
-
-
-6. Continue generating AI text and images based on the available credit balance.
-
-
-
-Learning Outcomes
-
-Through this project, I gained hands-on experience with:
-
-Building a complete MERN Stack application
-
-REST API development
-
-MongoDB database design with Mongoose
-
-User authentication and authorization
-
-Integrating the Groq API for AI text generation
-
-AI image generation using ImageKit
-
-Payment gateway integration using Razorpay
-
-Credit-based application logic
-
-Environment variable management
-
-Full-stack deployment on Vercel
-
-
-Future Improvements
-
-Save chat history
-
-Download generated images
-
-User profile management
-
-AI conversation history
-
-Multi-language support
-
-Voice input and AI voice responses
-
-Dark mode
-
-Advanced prompt templates
-
-
-Installation
+Clone the Repository
 
 git clone https://github.com/thekiran15/ChatbotAI.git
 
+Navigate to the Project
+
 cd ChatbotAI
+
+Install Dependencies
 
 npm install
 
-Configure your environment variables and start both the frontend and backend.
+Configure your required environment variables:
 
-Author
+MongoDB
+Groq API
+ImageKit
+Razorpay
+
+Then start the frontend and backend according to your project configuration.
+
+
+---
+
+👨‍💻 Author
 
 Kiran S B
 
-If you found this project helpful, consider giving it a ⭐ on GitHub.
+Computer Science Engineering Student | Full-Stack Developer
+
+Interested in Software Development, Full-Stack Development, AI Applications and Problem Solving.
+
+---
+
+<p align="center">⭐ If you found this project interesting, consider giving it a star!
+
+🚀 Built with MERN + AI + Razorpay
+
+</p>
