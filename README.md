@@ -9,6 +9,42 @@ A modern AI Chatbot Platform that allows users to generate AI-powered text and i
 
 </p>
 
+## Tech Stack
+
+### Frontend
+
+![React](https://img.shields.io/badge/React.js-2026-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-2026-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+### Backend
+
+![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-Backend-000000?style=for-the-badge&logo=express&logoColor=white)
+
+### Database
+
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+### AI
+
+![Groq](https://img.shields.io/badge/Groq-API-F55036?style=for-the-badge&logo=groq&logoColor=white)
+
+### Image Generation
+
+![ImageKit](https://img.shields.io/badge/ImageKit-Image_Generation-1E88E5?style=for-the-badge&logo=imagekit&logoColor=white)
+
+### Authentication
+
+![JWT](https://img.shields.io/badge/JWT-Authentication-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+
+### Payment
+
+![Stripe](https://img.shields.io/badge/Stripe-Payments-635BFF?style=for-the-badge&logo=stripe&logoColor=white)
+
+### Deployment
+
+![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
 ## Project Preview
 
 Login & Authentication
@@ -56,35 +92,6 @@ Purchase additional credits through Stripe.
 - Responsive User Interface
 - REST API Communication
 - Full-Stack Deployment on Vercel
-
-
-## Tech Stack
-
-### Frontend
-- React.js
-- Tailwind CSS
-
-### Backend
-- Node.js
-- Express.js
-
-### Database
-- MongoDB
-
-### AI
-- Groq API
-
-### Image Generation
-- ImageKit
-
-### Authentication
-- JWT
-
-### Payment
-- Stripe
-
-### Deployment
-- Vercel
 
 
 ## Application Architecture
