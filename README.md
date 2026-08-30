@@ -1,6 +1,6 @@
 ## ChatbotAI Platform
 
-🚀 AI-Powered Full-Stack Application built with MERN Stack
+AI-Powered Full-Stack Application built with MERN Stack
 
 A modern AI Chatbot Platform that allows users to generate AI-powered text and images, manage AI usage through a credit-based system, and purchase additional credits using Stripe.
 
@@ -11,54 +11,54 @@ A modern AI Chatbot Platform that allows users to generate AI-powered text and i
 
 ## Project Preview
 
-🔐 Login & Authentication
+Login & Authentication
 
 Secure user login and registration system.
 
 <p align="center">
 <img src="./screenshots/login.png" width="800">
-</p>💬 AI Chatbot
+</p>AI Chatbot
 
 Generate AI-powered text responses using the Groq API.
 
 <p align="center">
 <img src="./screenshots/chatbot.png" width="800">
-</p>🖼️ AI Image Generation
+</p>AI Image Generation
 
 Generate images from natural-language prompts.
 
 <p align="center">
 <img src="./screenshots/image-generation.png" width="800">
-</p>🌐 Community Images
+</p>Community Images
 
  View AI-generated images shared with the community.
 
 <p align="center">
 <img src="./screenshots/community-images.png" width="800">
-</p>💳 Credit Plans
+</p>Credit Plans
 
 Purchase additional credits through Stripe.
 
 <p align="center">
 <img src="./screenshots/credit-plans.png" width="800">
-</p>---
+</p>
 
 ## Key Features
 
-- 🤖 AI Text Generation using Groq API
-- 🖼️ AI Image Generation
-- 💬 Interactive AI Chatbot
-- 🔐 User Authentication & Authorization
-- 💰 Credit-Based Usage System
-- 💳 Stripe Payment Integration
-- 🌐 Community Image Sharing
-- 📜 Generated Content Management
-- 📱 Responsive User Interface
-- ⚡ REST API Communication
-- ☁️ Full-Stack Deployment on Vercel
+- AI Text Generation using Groq API
+- AI Image Generation
+- Interactive AI Chatbot
+- User Authentication & Authorization
+- Credit-Based Usage System
+- Stripe Payment Integration
+- Community Image Sharing
+- Generated Content Management
+- Responsive User Interface
+- REST API Communication
+- Full-Stack Deployment on Vercel
 
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React.js
@@ -125,12 +125,3 @@ Kiran S B
 
 Computer Science Engineering Student | Full-Stack Developer
 
-Interested in Software Development, Full-Stack Development, AI Applications and Problem Solving.
-
----
-
-<p align="center">⭐ If you found this project interesting, consider giving it a star!
-
-🚀 Built with MERN + AI + Stripe 
-
-</p>
