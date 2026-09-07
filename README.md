@@ -4,10 +4,9 @@ AI-Powered Full-Stack Application built with MERN Stack
 
 A modern AI Chatbot Platform that allows users to generate AI-powered text and images, manage AI usage through a credit-based system, and purchase additional credits using Stripe.
 
-<p align="left">🔗 <a href="https://chatbotai-99.vercel.app">Live Demo</a>
- 
+## Live Demo
 
-</p>
+https://chatbotai-99.vercel.app
 
 ## Tech Stack
 
